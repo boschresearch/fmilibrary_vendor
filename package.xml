@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>fmilibrary_vendor</name>
+  <version>1.0.0</version>
+  <description>Wrapper (aka vendor package) around the FMILibrary by Modelon AB (JModelica.org)</description>
+
+  <maintainer email="ralph.lange@de.bosch.com">Ralph Lange</maintainer>
+
+  <license>BSD-3-Clause</license><!-- The license by Modelon AB for FMILibrary 2.0.3 -->
+
+  <url type="website">https://jmodelica.org/</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
