@@ -1,5 +1,7 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(fmilibrary_vendor)
+
+find_package(ament_cmake REQUIRED)
 
 include(ExternalProject)
 externalproject_add(FMILibraryProject
@@ -11,20 +13,10 @@ externalproject_get_property(FMILibraryProject INSTALL_DIR)
 set(FMILibraryProject_INCLUDE_DIR "${INSTALL_DIR}/src/install/include")
 set(FMILibraryProject_LIB_DIR "${INSTALL_DIR}/src/install/lib")
 
-find_package(catkin)
-catkin_package(
-  INCLUDE_DIRS include
-  LIBRARIES fmilib_shared
-)
-add_library(fmilib_shared SHARED IMPORTED)
-set_target_properties(fmilib_shared PROPERTIES IMPORTED_LOCATION ${FMILibraryProject_LIB_DIR}/libfmilib_shared.so)
-add_dependencies(fmilib_shared FMILibraryProject)
+install(DIRECTORY ${FMILibraryProject_INCLUDE_DIR}/ DESTINATION include)
+install(FILES ${FMILibraryProject_LIB_DIR}/libfmilib.a DESTINATION lib)
+install(FILES ${FMILibraryProject_LIB_DIR}/libfmilib_shared.so DESTINATION lib)
 
-install(FILES ${FMILibraryProject_LIB_DIR}/libfmilib_shared.so
-  DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
-)
-
-install(DIRECTORY ${FMILibraryProject_INCLUDE_DIR}
-  DESTINATION .
-)
-
+ament_export_include_directories(include)
+ament_export_libraries(libfmilib.a libfmilib_shared.so)
+ament_package()
