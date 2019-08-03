@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>fmilibrary_vendor</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>Wrapper (aka vendor package) around the FMILibrary by Modelon AB (JModelica.org)</description>
 
   <maintainer email="ralph.lange@de.bosch.com">Ralph Lange</maintainer>
