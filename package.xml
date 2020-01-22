@@ -6,7 +6,7 @@
 
   <maintainer email="ralph.lange@de.bosch.com">Ralph Lange</maintainer>
 
-  <license>BSD-3-Clause</license><!-- The license by Modelon AB for FMILibrary 2.0.3 -->
+  <license>BSD-3-Clause</license><!-- The license of FMILibrary 2.1 -->
 
   <url type="website">https://jmodelica.org/</url>
 
