@@ -2,8 +2,8 @@
 Changelog for package fmilibrary_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.2.0 (2020-01-22)
+------------------
 * Updated to FMILibrary version 2.1 and new location on GitHub.
 
 0.1.1 (2019-10-28)
