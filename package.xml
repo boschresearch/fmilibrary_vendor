@@ -12,4 +12,7 @@
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <build_depend>git</build_depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
 </package>
