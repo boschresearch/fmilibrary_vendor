@@ -1,4 +1,4 @@
-name: build fmilibrary_vendor
+name: "Build action: Foxy + Rolling"
 
 on:
   push:
