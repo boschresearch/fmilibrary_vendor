@@ -2,8 +2,8 @@
 Changelog for package fmilibrary_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2021-03-22)
+------------------
 * Updated to version 2.2.3 of FMILibrary.
 
 0.2.0 (2020-01-22)
