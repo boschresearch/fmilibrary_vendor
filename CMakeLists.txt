@@ -6,7 +6,7 @@ find_package(ament_cmake REQUIRED)
 include(ExternalProject)
 externalproject_add(FMILibraryProject
   GIT_REPOSITORY https://github.com/modelon-community/fmi-library.git
-  GIT_TAG 2.1
+  GIT_TAG 2.2.3
   TIMEOUT 60
 )
 externalproject_get_property(FMILibraryProject INSTALL_DIR)
