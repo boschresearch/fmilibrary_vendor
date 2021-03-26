@@ -4,12 +4,16 @@ project(fmilibrary_vendor)
 find_package(ament_cmake REQUIRED)
 
 include(ExternalProject)
-externalproject_add(FMILibraryProject
+set(fmilibrary_version 2.2.3)
+externalproject_add(FMILibraryProject-${fmilibrary_version}
   GIT_REPOSITORY https://github.com/modelon-community/fmi-library.git
-  GIT_TAG 2.2.3
+  GIT_TAG ${fmilibrary_version}
+  GIT_CONFIG advice.detachedHead=false
+  # Suppress git update due to https://gitlab.kitware.com/cmake/cmake/-/issues/16419
+  UPDATE_COMMAND ""
   TIMEOUT 60
 )
-externalproject_get_property(FMILibraryProject INSTALL_DIR)
+externalproject_get_property(FMILibraryProject-${fmilibrary_version} INSTALL_DIR)
 set(FMILibraryProject_INCLUDE_DIR "${INSTALL_DIR}/src/install/include")
 set(FMILibraryProject_LIB_DIR "${INSTALL_DIR}/src/install/lib")
 
