@@ -2,6 +2,12 @@
 Changelog for package fmilibrary_vendor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Suppressing update step so that CMake doesn't attempt to re-build the
+  external project during the installation phase.
+* Contributors: Scott K Logan
+
 1.0.0 (2021-03-22)
 ------------------
 * Updated to version 2.2.3 of FMILibrary.
