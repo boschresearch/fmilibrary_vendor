@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
-<package format="2">
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
   <name>fmilibrary_vendor</name>
   <version>1.0.1</version>
   <description>Wrapper (aka vendor package) around the FMILibrary by Modelon AB (JModelica.org)</description>
 
   <maintainer email="christian.bertsch@de.bosch.com">Christian Bertsch</maintainer>
-  <author email="ralph.lange@de.bosch.com">Ralph Lange</author>
 
   <license>BSD-3-Clause</license><!-- The license of FMILibrary. -->
 
   <url type="website">https://jmodelica.org/</url>
+
+  <author email="ralph.lange@de.bosch.com">Ralph Lange</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
   <build_depend>git</build_depend>
